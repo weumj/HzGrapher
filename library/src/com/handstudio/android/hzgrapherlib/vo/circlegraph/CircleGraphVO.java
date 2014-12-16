@@ -2,8 +2,6 @@ package com.handstudio.android.hzgrapherlib.vo.circlegraph;
 
 import java.util.List;
 
-import android.graphics.Color;
-
 import com.handstudio.android.hzgrapherlib.animation.GraphAnimation;
 import com.handstudio.android.hzgrapherlib.vo.Graph;
 
@@ -12,10 +10,7 @@ public class CircleGraphVO extends Graph{
 	
 	//animation
 	private int 				radius ;
-	private int 				lineColor 			= Color.BLACK;
-	private int 				textColor 			= Color.BLACK;
 	private int 				textSize 			= 20;
-	private int 				graphBG 			= -1;
 	private int 				centerX 			= 0;
 	private int 				centerY 			= 0;
 	
@@ -58,14 +53,6 @@ public class CircleGraphVO extends Graph{
 		this.arrGraph = arrGraph;
 	}
 
-	public int getGraphBG() {
-		return graphBG;
-	}
-
-	public void setGraphBG(int graphBG) {
-		this.graphBG = graphBG;
-	}
-
 	public GraphAnimation getAnimation() {
 		return animation;
 	}
@@ -90,14 +77,6 @@ public class CircleGraphVO extends Graph{
 		this.radius = radius;
 	}
 
-	public int getTextColor() {
-		return textColor;
-	}
-
-	public void setTextColor(int textColor) {
-		this.textColor = textColor;
-	}
-
 	public int getTextSize() {
 		return textSize;
 	}
@@ -120,14 +99,6 @@ public class CircleGraphVO extends Graph{
 
 	public void setCenterY(int centerY) {
 		this.centerY = centerY;
-	}
-
-	public int getLineColor() {
-		return lineColor;
-	}
-
-	public void setLineColor(int lineColor) {
-		this.lineColor = lineColor;
 	}
 
 	public boolean isPieChart() {

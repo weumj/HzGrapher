@@ -17,6 +17,11 @@ public class ErrorCode {
 		Log.e(TAG, "code = " + code + " , message = " + message);
 	} 
 	
+	@Override
+	public String toString() {
+		return "code = " + code + " , message = " + message;
+	}
+	
 	//COMMON
 	public static final ErrorCode NOT_ERROR 						= new ErrorCode(0x00000000		,"NOT_ERROR");
 	public static final ErrorCode GRAPH_VO_IS_EMPTY	 				= new ErrorCode(0x00000001		,"GRAPH_VO_IS_EMPTY");

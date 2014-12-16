@@ -4,7 +4,6 @@ import java.util.List;
 
 import com.handstudio.android.hzgrapherlib.animation.GraphAnimation;
 import com.handstudio.android.hzgrapherlib.vo.Graph;
-import com.handstudio.android.hzgrapherlib.vo.linegraph.LineGraph;
 
 public class RadarGraphVO extends Graph{
 	
@@ -21,9 +20,7 @@ public class RadarGraphVO extends Graph{
 	
 	private String[] legendArr 			= null;
 	private List<RadarGraph> arrGraph 	= null;
-	
-	private int graphBG = -1;
-	
+		
 	private boolean isDrawRegion 		= false;
 	
 	public RadarGraphVO(String[] legendArr, List<RadarGraph> arrGraph) {
@@ -90,14 +87,6 @@ public class RadarGraphVO extends Graph{
 
 	public void setArrGraph(List<RadarGraph> arrGraph) {
 		this.arrGraph = arrGraph;
-	}
-
-	public int getGraphBG() {
-		return graphBG;
-	}
-
-	public void setGraphBG(int graphBG) {
-		this.graphBG = graphBG;
 	}
 
 	public GraphAnimation getAnimation() {

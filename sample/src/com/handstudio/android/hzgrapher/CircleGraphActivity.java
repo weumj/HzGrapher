@@ -6,14 +6,13 @@ import java.util.List;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
 import android.view.ViewGroup;
 
 import com.handstudio.android.hzgrapherlib.animation.GraphAnimation;
 import com.handstudio.android.hzgrapherlib.graphview.CircleGraphView;
 import com.handstudio.android.hzgrapherlib.vo.GraphNameBox;
-import com.handstudio.android.hzgrapherlib.vo.circlegraph.CircleGraphVO;
 import com.handstudio.android.hzgrapherlib.vo.circlegraph.CircleGraph;
+import com.handstudio.android.hzgrapherlib.vo.circlegraph.CircleGraphVO;
 
 public class CircleGraphActivity extends Activity {
 
@@ -66,11 +65,12 @@ public class CircleGraphActivity extends Activity {
 		CircleGraphVO vo = new CircleGraphVO(paddingBottom, paddingTop, paddingLeft, paddingRight,marginTop, marginRight,radius, arrGraph);
 		
 		// circle Line 
-		vo.setLineColor(Color.WHITE);
+		vo.setAxisLineColor(Color.WHITE);
+		vo.setAxisLineWidth(2);
 		
 		// set text setting
-		vo.setTextColor(Color.WHITE);
-		vo.setTextSize(20);
+		vo.setMarkTextColor(Color.WHITE);
+		vo.setMarkTextSize(20);
 		
 		// set circle center move X ,Y
 		vo.setCenterX(0);

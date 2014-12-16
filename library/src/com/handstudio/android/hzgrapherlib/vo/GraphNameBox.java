@@ -5,7 +5,7 @@ import android.graphics.Color;
 
 public class GraphNameBox {
 
-	public static final int DEFAULT_NAMEBOX_COLOR				= Color.BLUE;
+	public static final int DEFAULT_NAMEBOX_COLOR				= Color.BLACK;
 	public static final int DEFAULT_NAMEBOX_MARGINTOP 			= 100;
 	public static final int DEFAULT_NAMEBOX_MARGINRIGHT 		= 100;
 	public static final int DEFAULT_NAMEBOX_PADDING 			= 10;
@@ -35,7 +35,6 @@ public class GraphNameBox {
 			int nameboxMarginRight, int nameboxPadding, int nameboxTextSize,
 			int nameboxTextColor, int nameboxIconWidth, int nameboxIconHeight,
 			int nameboxTextIconMargin, int nameboxIconMargin) {
-		super();
 		this.nameboxColor = nameboxColor;
 		this.nameboxMarginTop = nameboxMarginTop;
 		this.nameboxMarginRight = nameboxMarginRight;

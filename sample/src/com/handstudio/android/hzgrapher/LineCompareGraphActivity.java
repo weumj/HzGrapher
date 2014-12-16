@@ -98,6 +98,8 @@ public class LineCompareGraphActivity extends Activity {
 		//set graph name box
 		vo.setGraphNameBox(new GraphNameBox());
 		
+		vo.setGraphBG(android.R.color.darker_gray);
+		
 		//use icon
 //		arrGraph.add(new Graph(0xaa66ff33, graph1, R.drawable.icon1));
 //		arrGraph.add(new Graph(0xaa00ffff, graph2, R.drawable.icon2));

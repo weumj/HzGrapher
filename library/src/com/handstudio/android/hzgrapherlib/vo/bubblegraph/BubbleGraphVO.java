@@ -3,11 +3,10 @@ package com.handstudio.android.hzgrapherlib.vo.bubblegraph;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.handstudio.android.hzgrapherlib.vo.Graph;
 import com.handstudio.android.hzgrapherlib.vo.GraphNameBox;
-import com.handstudio.android.hzgrapherlib.vo.linegraph.LineGraph;
+import com.handstudio.android.hzgrapherlib.vo.TwoDimensionGraph;
 
-public class BubbleGraphVO extends Graph
+public class BubbleGraphVO extends TwoDimensionGraph
 {
 	private String[] 				legendArr = null;
 	private List<BubbleGraph> 		arrGraph = null;
@@ -18,7 +17,6 @@ public class BubbleGraphVO extends Graph
 	private float 					maxSizeValue = 0.0f;
 	private int 					increment;
 	
-	private int 					graphBG = -1;
 	private long 					animationDuration = 2000;
 	
 	private boolean 				isLineShow = true;
@@ -81,10 +79,7 @@ public class BubbleGraphVO extends Graph
 	
 	public int getIncrement () { return this.increment; }
 	public void setIncrement ( int increment ) { this.increment = increment; }
-	
-	public int getGraphBG () { return this.graphBG; }
-	public void setGraphBG ( int graphBG ) { this.graphBG = graphBG; }
-	
+		
 	public List<BubbleGraph> getArrGraph() {
 		return arrGraph;
 	}

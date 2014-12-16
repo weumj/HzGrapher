@@ -3,39 +3,42 @@ package com.handstudio.android.hzgrapherlib.vo.bargraph;
 import java.util.List;
 
 import com.handstudio.android.hzgrapherlib.animation.GraphAnimation;
-import com.handstudio.android.hzgrapherlib.vo.Graph;
+import com.handstudio.android.hzgrapherlib.vo.TwoDimensionGraph;
 
-public class BarGraphVO extends Graph {
+public class BarGraphVO extends TwoDimensionGraph {
 
-	private float minValueX;
-	private float maxValueX;
+	private float minValueX = 0;
+	private float maxValueX = 1000;
 
-	private float minValueY;
-	private float maxValueY;
+	private float minValueY = 0;
+	private float maxValueY = 1000;
 
-	private float incrementX;
-	private float incrementY;
+	private float incrementX = 10;
+	private float incrementY = 10;
 
-	private float barWidth;
+	private float barWidth = 30;
 
-	private int graphBG;
-	private long animationDuration;
+	private long animationDuration = 1000;
 
-	private boolean isAnimationShow;
+	private boolean isAnimationShow = false;
 	private boolean isDrawRegion = false;
 
 	private GraphAnimation animation = null;
 	private List<BarGraph> arrGraph = null;
 	private String[] legendArr = null;
 
+	public BarGraphVO() {
+		super(DEFAULT_PADDING, DEFAULT_PADDING, DEFAULT_PADDING,
+				DEFAULT_PADDING, DEFAULT_MARGIN_TOP, DEFAULT_MARGIN_RIGHT);
+	}
+	
 	public BarGraphVO(String[] legendArr, List<BarGraph> arrGraph,
-			int paddingTop, int paddingBottom, int paddingLeft,int paddingRight, 
-			int marginTop, int marginRight, 
-			int minValueX, int minValueY, int maxValueX, int maxValueY, 
-			int incrementX, int incrementY,
-			int barWidth, 
-			int graphBG) {
-		super(paddingBottom, paddingTop, paddingLeft, paddingRight, marginTop, marginRight);
+			int paddingTop, int paddingBottom, int paddingLeft,
+			int paddingRight, int marginTop, int marginRight, int minValueX,
+			int minValueY, int maxValueX, int maxValueY, int incrementX,
+			int incrementY, int barWidth, int graphBG) {
+		super(paddingBottom, paddingTop, paddingLeft, paddingRight, marginTop,
+				marginRight);
 		this.minValueX = minValueX;
 		this.maxValueX = maxValueX;
 		this.minValueY = minValueY;
@@ -45,7 +48,7 @@ public class BarGraphVO extends Graph {
 		this.barWidth = barWidth;
 		this.legendArr = legendArr;
 		this.arrGraph = arrGraph;
-		this.graphBG = graphBG;
+		setGraphBG(graphBG);
 	}
 
 	public float getMinValueX() {
@@ -104,13 +107,6 @@ public class BarGraphVO extends Graph {
 		this.barWidth = barWidth;
 	}
 
-	public int getGraphBG() {
-		return graphBG;
-	}
-
-	public void setGraphBG(int graphBG) {
-		this.graphBG = graphBG;
-	}
 
 	public long getAnimationDuration() {
 		return animationDuration;
@@ -159,5 +155,4 @@ public class BarGraphVO extends Graph {
 	public void setAnimation(GraphAnimation animation) {
 		this.animation = animation;
 	}
-	
 }

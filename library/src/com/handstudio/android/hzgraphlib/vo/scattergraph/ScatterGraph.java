@@ -1,6 +1,5 @@
 package com.handstudio.android.hzgraphlib.vo.scattergraph;
 
-import java.util.ArrayList;
 
 public class ScatterGraph 
 {

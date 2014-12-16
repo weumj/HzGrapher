@@ -3,9 +3,9 @@ package com.handstudio.android.hzgrapherlib.vo.linegraph;
 import java.util.List;
 
 import com.handstudio.android.hzgrapherlib.animation.GraphAnimation;
-import com.handstudio.android.hzgrapherlib.vo.Graph;
+import com.handstudio.android.hzgrapherlib.vo.TwoDimensionGraph;
 
-public class LineGraphVO extends Graph{
+public class LineGraphVO extends TwoDimensionGraph{
 	
 	//max value
 	private int maxValue 		= DEFAULT_MAX_VALUE;
@@ -19,7 +19,6 @@ public class LineGraphVO extends Graph{
 	private String[] legendArr 			= null;
 	private List<LineGraph> arrGraph 	= null;
 	
-	private int graphBG = -1;
 	
 	private boolean isDrawRegion 		= false;
 	
@@ -87,14 +86,6 @@ public class LineGraphVO extends Graph{
 
 	public void setArrGraph(List<LineGraph> arrGraph) {
 		this.arrGraph = arrGraph;
-	}
-
-	public int getGraphBG() {
-		return graphBG;
-	}
-
-	public void setGraphBG(int graphBG) {
-		this.graphBG = graphBG;
 	}
 
 	public GraphAnimation getAnimation() {

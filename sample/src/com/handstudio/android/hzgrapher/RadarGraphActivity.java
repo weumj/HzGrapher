@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.ViewGroup;
 
@@ -97,12 +98,15 @@ public class RadarGraphActivity extends Activity {
 				paddingBottom, paddingTop, paddingLeft, paddingRight,
 				marginTop, marginRight, maxValue, increment, legendArr, arrGraph);
 		
+		vo.setAxisLineColor(Color.GRAY);
+		
 		//set animation
 		vo.setAnimation(new GraphAnimation(GraphAnimation.LINEAR_ANIMATION, GraphAnimation.DEFAULT_DURATION*3));
 		//set graph name box
 		vo.setGraphNameBox(new GraphNameBox());
 		//set draw graph region
 		vo.setDrawRegion(true);
+
 		
 		//use icon
 //		arrGraph.add(new Graph(0xaa66ff33, graph1, R.drawable.icon1));

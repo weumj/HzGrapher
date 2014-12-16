@@ -2,8 +2,6 @@ package com.handstudio.android.hzgrapherlib.vo.bubblegraph;
 
 import android.graphics.Color;
 
-import com.handstudio.android.hzgrapherlib.util.EuclidPoint;
-
 public class BubbleGraph 
 {
 	private String name = null;

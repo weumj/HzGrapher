@@ -65,11 +65,11 @@ private ViewGroup layoutGraphView;
 		CircleGraphVO vo = new CircleGraphVO(paddingBottom, paddingTop, paddingLeft, paddingRight,marginTop, marginRight,radius, arrGraph);
 		
 		// circle Line 
-		vo.setLineColor(Color.WHITE);
+		vo.setAxisLineColor(Color.TRANSPARENT);
 		
 		// set text setting
-		vo.setTextColor(Color.WHITE);
-		vo.setTextSize(20);
+		vo.setMarkTextColor(Color.WHITE);
+		vo.setMarkTextSize(30);
 		
 		// set circle center move X ,Y
 		vo.setCenterX(0);
